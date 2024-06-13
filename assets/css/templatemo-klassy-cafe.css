@@ -188,12 +188,6 @@ header
   right: 0px;
   box-shadow: 0px 0px 10px rgba(0,0,0,0.15)!important;
 }
-
-.background-header .logo,
-.background-header .main-nav .nav li a {
-  color: #1e1e1e!important;
-}
-
 .background-header .main-nav .nav li:hover a {
   color: #000!important;
 }
@@ -215,28 +209,15 @@ header
   -o-transition: all .5s ease 0s;
   transition: all .5s ease 0s;
 }
+.header-area .main-nav a img{
+  width: 300px;
+  padding-bottom: 30px;
+}
 
 .header-area .main-nav {
+  
   min-height: 80px;
   background: transparent;
-}
-
-.header-area .main-nav .logo {
-  line-height: 100px;
-  color: #fff;
-  font-size: 28px;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  float: left;
-  -webkit-transition: all 0.3s ease 0s;
-  -moz-transition: all 0.3s ease 0s;
-  -o-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
-}
-
-.background-header .main-nav .logo {
-  line-height: 75px;
 }
 
 .background-header .nav {
@@ -254,6 +235,7 @@ header
   transition: all 0.3s ease 0s;
   position: relative;
   z-index: 999;
+  padding-top: 15px;
 }
 
 .header-area .main-nav .nav li {
@@ -486,7 +468,7 @@ header
 }
 
 .header-area.header-sticky {
-  min-height: 80px;
+  min-height: 110px;
 }
 
 .header-area .nav {
@@ -508,9 +490,7 @@ header
 }
 
 @media (max-width: 767px) {
-  .header-area .main-nav .logo {
-    color: #1e1e1e;
-  }
+ 
   .header-area.header-sticky .nav li a:hover,
   .header-area.header-sticky .nav li a.active {
     color: #000!important;
@@ -524,13 +504,13 @@ header
     padding: 0px 15px;
     height: 100px;
     box-shadow: none;
-    text-align: center;
+    text-align: left;
   }
   .header-area .container {
     padding: 0px;
   }
   .header-area .logo {
-    margin-left: 30px;
+    text-align: left;
   }
   .header-area .menu-trigger {
     display: block !important;
@@ -547,6 +527,8 @@ header
     -o-transition: all 0s ease 0s;
     transition: all 0s ease 0s;
     margin-left: 0px;
+    padding: 0 15px;
+    
   }
   .header-area .main-nav .nav li:first-child {
     border-top: 1px solid #eee;
@@ -873,9 +855,8 @@ about
 .vision_mission{
   min-width: 250px;
   min-height: 300px;
-  background-color: #fafafa;
   padding: 2rem;
-  box-shadow: 2px 2px 5px #000;
+  box-shadow: 0 05px 15px 0 rgba(0,0,0,0.15);
   display: flex;
   flex-direction: column;
   row-gap: 1rem;
@@ -1556,6 +1537,8 @@ footer .left-text-content p {
   color: #fff;
   font-size: 14px;
   text-align: right;
+  padding-top: 20px;
+ 
 }
 
 footer .right-text-content p {
@@ -1573,12 +1556,14 @@ footer .right-text-content {
 
 footer .logo {
   text-align: center;
+  width: 300px;
 
 }
 
 footer .right-text-content ul li {
   display: inline-block;
   margin-left: 15px;
+  padding-top: 20px;
 }
 footer .right-text-content ul li:first-child {
   margin-left: 0px;
@@ -1659,6 +1644,9 @@ responsive
   footer .right-text-content {
     text-align: center;
     margin-bottom: 30px;
+  }
+  footer .right-text-content ul li{
+    padding-top: 0;
   }
   footer .left-text-content p {
     text-align: center;
