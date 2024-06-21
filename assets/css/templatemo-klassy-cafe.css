@@ -820,6 +820,11 @@ about
   position: relative;
   z-index: 9;
 }
+#about a{
+  text-decoration: none;
+  color: #000;
+  
+}
 
 #about .section-heading h2 {
   padding-right: 120px;
@@ -832,7 +837,7 @@ about
   transition: 0.5s;
 }
 #about img:hover{
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 #about .left-text-content p {
   margin-bottom: 25px;
