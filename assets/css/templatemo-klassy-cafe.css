@@ -1110,10 +1110,13 @@ chefs
   padding: 5px;
   transition: all .5s;
   border-radius: 3px;
+  transition: 0.5s;
+  
 }
 
 #chefs .chef-item:hover {
-  border-color: #000;
+ box-shadow: 0 0 20px 0 #000;
+ transform: scale(1.02);
 }
 
 #chefs .chef-item:hover .down-content h4 {
